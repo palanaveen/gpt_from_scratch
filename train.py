@@ -3,10 +3,10 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from tqdm import tqdm
-from model_class import BigramLanguageModel
+from naveen.personal.study.gpt_from_scratch.model import BigramLanguageModel
 import torch.multiprocessing as mp
 torch.manual_seed(1337)
-from bigram_dataset import MyDataset
+from naveen.personal.study.gpt_from_scratch.dataset import MyDataset
 # device = "cuda:2" if torch.cuda.is_available() else "cpu"
 from torch.utils.data import DataLoader
 from torch.distributed import init_process_group, destroy_process_group
